@@ -1,0 +1,1012 @@
+<div class="section padding10">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header vendor">
+                <h5>
+                    <ul class="nav nav-tabs p-t-1">
+                        <li class="active">
+                            <a data-toggle="tab" href="#1" id="tab1">Became A Partner</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#2" id="tab2">Vendor Details</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#3" id="tab3">Residential Details</a>
+                        </li>
+                        <li>
+                            <a id="tab4" data-toggle="tab" href="#4" role="tab">Bank Details</a>
+                        </li>
+                        <li>
+                            <a id="tab5" data-toggle="tab" href="#5">More Details</a>
+                        </li>
+                        <li>
+                            <a id="tab6" data-toggle="tab" href="#6">Repaire and Services</a>
+                        </li>
+                    </ul>
+                </h5>
+            </div>
+
+            <div class="card-body text-center">
+                <form #f="ngForm">
+                    <!-------parter Form---------------->
+                    <div class="tab-content" id="nav-tabContent">
+                        <div id="1" class="tab-pane fade in active">
+                            <span>
+                                <h3>Became A Partner</h3>
+                            </span>
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="v_application-no">Application No.</label>
+                                        <input type="text" class="form-control" name="application" [(ngModel)] ="application" required readonly>
+                                   </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="v_supervision-code">Supervision Code</label>
+                                        <input type="text" class="form-control" name="superVision"  [(ngModel)] ="supervisionCode" required>
+                                    </div>  
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="v_sub-code">Sub-Code</label>
+                                        <input type="text" class="form-control" name="subCode" [(ngModel)] ="subCode" readonly required>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="v_plan-code">Plan Code.</label>
+                                        <input type="text" class="form-control" name="planCode" [(ngModel)] ="planCode" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="km">Km.</label>
+                                        <input type="text" class="form-control" name="kilomtr" [(ngModel)] ="kilomtr" required pattern="[0-9]{4}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="supervision-no">Supervision Mobile No.</label>
+                                        <input type="text" class="form-control" name="superMobile" [(ngModel)] ="supervisionMobile" type="tel" required pattern="[0-9]{10}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="v_plan-name">Plan Name</label>
+                                        <input type="text" class="form-control" name="planName" [(ngModel)] ="planName" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="plan-amount">Plan Amount</label>
+                                        <input type="text" class="form-control" name="planAmt" [(ngModel)] ="planAmt" required pattern="[0-9]{5}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="plan-date">Plan Date</label>
+                                        <input type="date" name="planDate" max="3000-12-31" min="1000-01-01" class="form-control" [(ngModel)] ="planDate" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row">
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="first-name">First Name</label>
+                                      <input type="text" class="form-control" id="first-name" placeholder="Enter first name">
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="middle-name">Middle Name</label>
+                                      <input type="text" class="form-control" id="middle-name" placeholder="Enter middle name">
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="last-name">Surname</label>
+                                      <input type="text" class="form-control" id="last-name" placeholder="Enter suname name">
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="contact-no">Registered Contact No.</label>
+                                      <input type="text" class="form-control" id="contact-no">
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="drive">Driving</label>
+                                      <select class="form-control" id="drive">                                                 <option>Self</option>
+                                      <option>Driver</option>
+                                      </select>
+                                  </div>
+
+                              </div>
+
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="gender">Gender</label>
+
+                                      <select class="form-control" id="gender">                                                   <option>Male</option>
+                                      <option>Female</option>
+                                      <option>Other </option>
+                                  </select>
+                                  </div>
+                              </div>
+                          </div>-->
+                            <div class="row">
+                                <div class="col-md">
+                                    <hr>
+                                    <button type="button" class="btn btnNext vendor float-right" onclick="next(1)">Next</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----------Vendor Details---------------->
+
+                        <div class="tab-pane fade" id="2" role="tabpanel">
+                            <span>
+                                <h3>Vendor Details</h3>
+                            </span>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3" style="margin-top: auto;margin-bottom: auto">
+                                    <label>Owner Name :</label>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="md-form form-group">
+                                        <label for="first-name">First Name</label>
+                                        <input type="text" class="form-control" name="ownerName" [(ngModel)] ="ownerName" minlength="3" maxlength="16" required pattern="[A-Za-z]{3,16}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="md-form form-group">
+                                        <label for="middle-name">Middle Name</label>
+                                        <input type="text" class="form-control" name="ownerMiddleName" [(ngModel)] ="ownerMiddleName" minlength="3" maxlength="16" required pattern="[A-Za-z]{3,16}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="md-form form-group">
+                                        <label for="last-name">Surname</label>
+                                        <input type="text" class="form-control" name="ownerLastName" [(ngModel)] ="ownerLastName" minlength="3" maxlength="16" required pattern="[A-Za-z]{3,16}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3" style="margin-bottom: auto;margin-top: auto">
+                                    <label>Garage Name :</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="md-form form-group">
+                                        <label for="first-name"> Name</label>
+                                        <input type="text" class="form-control" name="garageName" [(ngModel)] ="garageName" required pattern="[A-Za-z]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="gender">Gender</label>
+                                        <select class="form-control" name="gender" [(ngModel)] ="gender" required>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Other </option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="  form-group ">
+                                        <label for="tel-no">Contact Number</label>
+                                        <input type="tel" name="telNum" class="form-control" [(ngModel)] ="telNum" minlength="10" maxlength="10" required pattern="[0-9]{10}">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="cont-no">Registerd Mobile No.</label>
+                                        <input type="tel" class="form-control" name="registerMobile" [(ngModel)] ="registerMobile" minlength="10" maxlength="10" pattern="[0-9]{10}" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="md-form form-group">
+                                        <label for="email">Email Id</label>
+                                        <input type="email" name="email" class="form-control" [(ngModel)] ="email" required> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md">
+                                    <hr>
+                                    <button type="button" class="btn vendor float-left" onclick="prev(2)">Prev</button>
+                                    <button type="button" class="btn vendor float-right" onclick="next(2)">Next</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-----------Residential details-------->
+                        <div class="tab-pane fade" id="3" role="tabpanel">
+                            <span>
+                                <h3>Residential Details</h3>
+                            </span>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <div class="md-form">
+                                        <input type="text" maxlength="400" name="residentAddress" class="form-control" [(ngModel)] ="residentAddress" required>
+                                        <label for="address">Residence Address</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="container-fluid c1 vendorcheck">Car Pickup
+                                        <input type="checkbox">
+                                        <span class="checkmark" required></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="md-form  form-group ">
+                                        <input type="text" name="residentArea" class="form-control" [(ngModel)] ="residentArea" required>
+                                        <label for="area">Area</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="md-form  form-group ">
+                                        <input type="text" name="residentLandMark" class="form-control" [(ngModel)] ="residentlandMark" required>
+                                        <label for="landmark">Landmark</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="md-form  form-group ">
+                                        <input type="text" name="residentCity" class="form-control" [(ngModel)] ="residentCity" required>
+                                        <label for="city">City</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="md-form  form-group ">
+                                        <input type="text" name="residentPin" class="form-control" [(ngModel)] ="residentPin" pattern="[0-9]{6}" required>
+                                        <label for="pin-code">Pin Code</label>
+                                    </div>
+                                </div>
+                            </div>
+                          <!--   <div class="row">
+                                <div class="col-md-3">
+                                    <div class="md-form  form-group ">
+                                        <input type="text" name="residentNum" class="form-control"[(ngModel)] ="residentNum" required>
+                                        <label for="tel-no">Contact Number</label>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="row">
+                                <div class="col-md">
+                                    <hr>
+                                    <button type="button" class="btn vendor float-left" onclick="prev(3)">Prev</button>
+                                    <button type="button" class="btn vendor float-right" onclick="next(3)">Next</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!------Bank Details------------>
+                        <div class="tab-pane fade" id="4" role="tabpanel">
+                            <span>
+                                <h3>Bank Details</h3>
+                            </span>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3" style="margin-top: auto;margin-bottom: auto">
+                                    <label>Account Holder :</label>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="first-name">First Name</label>
+                                        <input type="text" class="form-control" name="holdername" [(ngModel)] ="holderName"minlength="3" maxlength="16" pattern="[A-Za-z]{3,16}" required >
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="middle-name">Middle Name</label>
+                                        <input type="text" class="form-control" name="middlename" [(ngModel)] ="middleName" minlength="3" maxlength="16" required pattern="[A-Za-z]{3,16}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="last-name">Surname</label>
+                                        <input type="text" class="form-control" name="surname" [(ngModel)] ="surName" minlength="3" maxlength="16" required pattern="[A-Za-z]{3,16}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="bank-name">Bank Name</label>
+                                        <input type="text" class="form-control" name="bankName" [(ngModel)] ="bankName" required pattern="[A-Za-z]">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="branch">Branch</label>
+                                        <input type="text" class="form-control" name="branch" [(ngModel)] ="branch" pattern="[A-Za-z]" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="account-no">Account Number</label>
+                                        <input type="text" class="form-control" name="accountNo" placeholder="Enter your account number" [(ngModel)] ="accountNo" pattern="[0-9]{11,16}" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="account-type">Account Type</label>
+                                        <select class="form-control" name="accountType" [(ngModel)] ="accountType" required>
+                                            <option>Saving</option>
+                                            <option>Current</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="ifsc-code">IFSC Code</label>
+                                        <input type="text" class="form-control" name="ifscCode" [(ngModel)] ="ifscCode" pattern="[A-Za-z]{4}\[0-9A-Za-z]{6}" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" required> I agree to the terms & conditions of serices offered by Pannox Auto Pvt. Ltd.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md">
+                                    <hr>
+                                    <button type="button" class="btn vendor float-left" onclick="prev(4)">Prev</button>
+                                    <button type="button" class="btn vendor float-right" onclick="next(4)">Next</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-----------More details-------->
+                        <div class="tab-pane fade" id="5" role="tabpanel">
+                            <span>
+                                <h3>More Details</h3>
+                            </span>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md">
+                                    <div id="accordion">
+
+                                        <div class="card">
+                                            <div class="card-header vendor p1">
+                                                <a class="card-link" data-toggle="collapse" href="#service_center">
+                                                    Authorised Service Center
+                                                </a>
+                                            </div>
+                                            <div id="service_center" class="collapse in" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">MARUTI SUZUKI
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">HYUNDAI
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">HONDA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">TOYOTA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">VOLKSWAGEN
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">TATA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">SKODA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">RENAULTS
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">DATSUN
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">FITA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header vendor p1 white">
+                                                <a class="collapsed card-link" data-toggle="collapse" href="#garege">
+                                                    Independent Garage
+                                                </a>
+                                            </div>
+                                            <div id="garege" class="collapse" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">MARUTI SUZUKI
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">HYUNDAI
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">HONDA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">TOYOTA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">VOLKSWAGEN
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">TATA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">SKODA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">RENAULTS
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">DATSUN
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">FITA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header vendor p1">
+                                                <a class="collapsed card-link" data-toggle="collapse" href="#multi-garege">
+                                                    Multi Brand Garage
+                                                </a>
+                                            </div>
+                                            <div id="multi-garege" class="collapse" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">MARUTI SUZUKI
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">HYUNDAI
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">HONDA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">TOYOTA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">VOLKSWAGEN
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">TATA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">SKODA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">RENAULTS
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">DATSUN
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">FITA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">FORD
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">CHEVROLET
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">NISSAN
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">SKODA
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">AUDI
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">BMW
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">MERCEDES BENZ
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="container-fluid c1 vendorcheck">VOLVO
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md">
+                                    <hr>
+                                    <button type="button" class="btn vendor float-left" onclick="prev(5)">Prev</button>
+                                    <button type="button" class="btn vendor float-right" onclick="next(5)">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-----------Repair and Services-------->
+                        <div class="tab-pane fade" id="6" role="tabpanel">
+                            <span>
+                                <h3>Repair And Service</h3>
+                            </span>
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header vendor p1">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#ac-service">
+                                                <label class="container-fluid c1 vendorcheck white"> AC SERVICE
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="ac-service" class="collapse" data-parent="#accordion">
+                                                <label class="container-fluid r1 vendorcheck">AC cooling test
+                                                    <input type="checkbox" name="ac1">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">AC operations checkup
+                                                    <input type="checkbox" name="ac2">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">AC gas top up
+                                                    <input type="checkbox" name="ac3">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Compressor oli top up
+                                                    <input type="checkbox" name="ac4">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Evaporator (Cooling Coil) CLeaning
+                                                    <input type="checkbox" name="ac5">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Condenser Cleaning
+                                                    <input type="checkbox" name="ac6">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">AC vents cleaning
+                                                    <input type="checkbox" name="ac7">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">AC filter cleaning
+                                                    <input type="checkbox" name="ac8">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">AC gas complete replacement
+                                                    <input type="checkbox" name="ac9">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">AC filter replacement
+                                                    <input type="checkbox" name="ac10">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Dashboard removal and refitting
+                                                    <input type="checkbox" name="ac11">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header vendor p1">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#car-wash">
+                                                <label class="container-fluid c1 vendorcheck white">CAR WASHING
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="car-wash" class="collapse" data-parent="#accordion">
+                                                <label class="container-fluid r1 vendorcheck">Interior Vacuming
+                                                    <input type="checkbox" name="cw1">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Mats Cleaning
+                                                    <input type="checkbox" name="cwc2">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Dashboard Dressing
+                                                    <input type="checkbox" name="cw3">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Steering Wheel and Gear knob Cleaning
+                                                    <input type="checkbox" name="cw4">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Door Panel and Pillars Cleaning
+                                                    <input type="checkbox" name="cw5">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">AC vents Cleaning
+                                                    <input type="checkbox" name="cw6">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Roof and seat covers Cleaning
+                                                    <input type="checkbox" name="cw7">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Carpet, Seat belt, Boot-space Cleaning
+                                                    <input type="checkbox" name="cw8">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Foam based interior Cleaning
+                                                    <input type="checkbox" name="cw9">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Top Wash
+                                                    <input type="checkbox" name="cw10">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Tyre Polish
+                                                    <input type="checkbox" name="cw11">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Wax Polish
+                                                    <input type="checkbox" name="cw12">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">All Glass Cleaning
+                                                    <input type="checkbox" name="cw13">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Trunk Cleaning
+                                                    <input type="checkbox" name="cw14">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Exterior spots and Marks Removal
+                                                    <input type="checkbox" name="cw15">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Telon Coating and Removal of Scratches
+                                                    <input type="checkbox" name="cw16">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header vendor p1">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#wheel-care">
+                                                <label class="container-fluid c1 vendorcheck white">WHEEL CARE
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="wheel-care" class="collapse" data-parent="#accordion">
+                                                <label class="container-fluid r1 vendorcheck">Tyre Health Checkup
+                                                    <input type="checkbox" name="wc1">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Wheel Alignment
+                                                    <input type="checkbox" name="wc2">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Tire rotation
+                                                    <input type="checkbox" name="wc3">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Air Filling
+                                                    <input type="checkbox" name="wc4">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Rims Cleaning and Dressing
+                                                    <input type="checkbox" name="wc5">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Wheel Balancing
+                                                    <input type="checkbox" name="wc6">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Puncture Repair
+                                                    <input type="checkbox" name="wc7">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header vendor p1">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#paint">
+                                                <label class="container-fluid c1 vendorcheck white">DENTS AND PAINT
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="paint" class="collapse" data-parent="#accordion">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header vendor p1">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#car">
+                                                <label class="container-fluid c1 vendorcheck white">CAR PROTECTION
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="car" class="collapse" data-parent="#accordion">
+                                                <label class="container-fluid r1 vendorcheck">Under Body Washing
+                                                    <input type="checkbox" name="cp1">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Under Body Anti Rust Coating
+                                                    <input type="checkbox" name="cp2">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Silencer Coating
+                                                    <input type="checkbox" name="cp3">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Exterior Body Wash
+                                                    <input type="checkbox" name="cp4">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header vendor p1">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#break">
+                                                <label class="container-fluid c1 vendorcheck white">BRAKE SERVICE
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="break" class="collapse" data-parent="#accordion">
+                                                <label class="container-fluid r1 vendorcheck">Brake Cleaning
+                                                    <input type="checkbox" name="bs1">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Brake pad/shoes depth check
+                                                    <input type="checkbox" name="bs2">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Brake disc/drum run-out check
+                                                    <input type="checkbox" name="bs3">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Brake child parts cheakup
+                                                    <input type="checkbox" name="bs4">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Brake Bleeding
+                                                    <input type="checkbox" name="bs5">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Joints greasing (if required)
+                                                    <input type="checkbox" name="bs6">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Brake Fluid Top Up
+                                                    <input type="checkbox" name="bs7">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="container-fluid r1 vendorcheck">Major Parts (Brake pads/shoes) replacemenet
+                                                    <input type="checkbox" name="bs8">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md">
+                                    <hr>
+                                    <button type="button" class="btn vendor float-left" onclick="prev(6)">Prev</button>
+                                    <button class="btn vendor float-right" (click)="createVendor()" [disabled]="!f.valid" >Submit</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+              
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

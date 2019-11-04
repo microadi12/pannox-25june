@@ -1,0 +1,36 @@
+<div class="section padding10">
+  <div class="container-fluid text-center">
+    <div class="card p1 mlr-auto login-card round">
+      <div class="card-header p1 pb-2 bg-sky-blue white round">
+        <h4> <span class="ti ti-lock"></span> Login Here</h4>
+      </div>
+      <hr>
+      <div class="card-body p1 text-center">
+        <form>
+          <div class="row p1">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="user_name">User Name</label>
+                <input type="text" class="form-control round"  name="userId" [(ngModel)] = "userId">
+              </div>
+            </div>
+          </div>
+
+          <div class="row p1">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control round" name="password" [(ngModel)] = "password">
+              </div>
+            </div>
+          </div>
+          <div class="row p1">
+            <div class="col-md-12">
+              <button type="submit" class="btn bg-sky-blue p2 pl-1 pr-1"  (click) = "loginCredential()" >Login</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

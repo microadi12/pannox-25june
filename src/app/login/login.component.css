@@ -1,0 +1,28 @@
+.login-card{
+    width: 50%;
+    box-shadow: 2px 2px #88888861;
+}
+
+@media screen and (max-width: 992px)
+{
+
+    .login-card{
+        width: 70%;
+    }
+    .tab-content{
+        margin-left: 1%;
+        margin-right:1%;
+        padding-bottom: 5%;
+        }
+    #accordion{
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+}
+
+@media screen and (max-width: 550px)
+{
+    .login-card{
+        width: 100%;
+    }
+}

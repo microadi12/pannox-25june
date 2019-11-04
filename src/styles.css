@@ -1,0 +1,149 @@
+/* You can add global styles to this file, and also import other style files */
+
+.p1{
+    padding: 1%;
+}
+.p2{
+    padding: 2%;
+}
+.p-t-1{
+    padding-top: 0.5%;
+}
+.pb-2{
+    padding-bottom: 2%;
+}
+.pl-1{
+    padding-left: 1%;
+}
+.pr-1{
+    padding-right: 1%;
+}
+.mlr-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* input[pattern]:invalid >
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus 
+{
+    border-color: rgba(239, 104, 104, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(239, 104, 104, 0.6);
+    outline: 0 none;
+  }
+
+  textarea:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="week"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="color"]:focus,
+  .uneditable-input:focus 
+  {   
+    border-color: rgba(126, 239, 104, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+    outline: 0 none;
+  }
+ *//* 
+ .form-control:focus{
+    border-color: rgba(126, 239, 104, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+ }
+ input[pattern]:invalid .form-control:focus{
+    border-color: rgba(239, 104, 104, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(239, 104, 104, 0.6);
+ } */
+
+.tab-content{
+    padding-bottom: 1%;
+}
+
+
+.padding10{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.white{
+    color: #fff;
+}
+
+.user{
+ border-color: darkblue;   
+}
+
+.user{
+    font: 2.5rem;
+    color: #fff;
+    background-color:darkblue;
+    font-weight: 600;
+}
+.vendor{
+    border-color:purple;
+}
+.vendor{
+    font: 2.5rem;
+    color: #fff;
+    background-color:purple;
+    font-weight: 600;
+}
+.operator{
+    border-color: #22abe0;
+}
+.operator{
+    font:2.5rem;
+    color: #fff;
+    background-color: #22abe0;
+    font-weight: 600;
+}
+/* .card-header nav a,
+.card-header,.card-header a{
+    font-size: 1.8rem;
+    color: #fff;
+} */
+nav a .active{
+    color: darkblue;
+}
+.bg-orange{
+    background-color: darkorange;
+}
+.bg-sky-blue{
+    background-color: #2196f3;
+}
+.round{
+    border-radius: 20px;
+}
+.btn{
+    color: #fff;
+   padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 600;
+}
+
+/******/
+
+

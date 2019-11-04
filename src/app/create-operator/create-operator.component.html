@@ -1,0 +1,284 @@
+<div class="section padding10">
+  <div class="container-fluid">
+      <div class="card">
+          <div class="card-header operator p-t-1">
+              <h5>
+                  <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <li class="active">
+                          <a id="tab1" data-toggle="tab" href="#1" role="tab">Personal Details</a>
+                      </li>
+                      <li>
+                          <a id="tab2" data-toggle="tab" href="#2" role="tab">Office Details</a>
+                      </li>
+                      <li>
+                          <a id="tab3" data-toggle="tab" href="#3" role="tab">Residential Details</a>
+                      </li>
+                  </ul>
+              </h5>
+          </div>
+          <div class="card-body text-center">
+              <form #f="ngForm">
+                  <!-------Personal Details Form---------------->
+                  <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade in active" id="1" role="tabpanel">
+                          <span class="">
+              <h3>Personal Details</h3>
+            </span>
+                          <hr>
+                            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="application-no">Application No.</label>
+                  <input type="text" class="form-control"  name="application" [(ngModel)]="application" readonly required pattern="[A-Z]{1}\[0-9]{7}">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="supervision-code">Supervision Code</label>
+                  <input type="text" class="form-control" name="supervisionCode" [(ngModel)]="supervisionCode" readonly required>
+                </div>
+              </div>
+              </div>
+              <!--
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label for="sub-code">Sub-Code</label>
+                  <input type="text" class="form-control" name="subCode" [(ngModel)]="subCode" required>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label for="plan-code">Plan Code.</label>
+                  <input type="text" class="form-control" name="planCode" [(ngModel)]="planCode" required>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label for="km">Km.</label>
+                  <input type="text" class="form-control" name="kilomtr" [(ngModel)]="kilomtr" required>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="supervision-no">Supervision Mobile No.</label>
+                  <input type="text" class="form-control" name="supervisionMobile" [(ngModel)]="supervisionMobile" required>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="plan-name">Plan Name</label>
+                  <input type="text" class="form-control" name="planName" [(ngModel)]="planName" required>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="plan-amount">Plan Amount</label>
+                  <input type="text" class="form-control" name="planAmt" [(ngModel)]="planAmt" required>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="plan-date">Plan Date</label>
+                  <input type="date" name="planDate" max="3000-12-31" min="1000-01-01" class="form-control" [(ngModel)]="planDate" required>
+                </div>
+              </div>
+            </div> -->
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="first-name">First Name</label>
+                                      <input type="text" class="form-control" name="firstName" placeholder="Enter first name" [(ngModel)]="firstName" required  pattern="[A-Za-z]{3,16}" minlength="3" maxlength="16">
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="middle-name">Middle Name</label>
+                                      <input type="text" class="form-control" name="middleName" placeholder="Enter middle name" [(ngModel)]="middleName" required pattern="[A-Za-z]{3,16}" minlength="3" maxlength="16">
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="last-name">Surname</label>
+                                      <input type="text" class="form-control" name="lastName" placeholder="Enter suname name" [(ngModel)]="lastName" required pattern="[A-Za-z]{3,16}" minlength="3" maxlength="16">
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="contact-no">Registered Contact No.</label>
+                                      <input type="text" class="form-control" name="registerContact" [(ngModel)]="registerContact" required type="tel" pattern="[0-9]{10}">
+                                  </div>
+                              </div>
+
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="gender">Gender</label>
+                                      <select class="form-control" name="gender" [(ngModel)]="gender" required >
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other </option>
+                  </select>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">Email</label>
+                                    <input type="email" class="form-control input-email" [(ngModel)]="email" name="email">
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="row">
+                              <div class="col-md">
+                                  <hr>
+                                  <button type="button" class="btn operator float-right" onclick="next(1)">Next</button>
+                              </div>
+                          </div>
+                      </div>
+                      <!-------Office Details Form---------------->
+
+                      <div class="tab-pane fade" id="2" role="tabpanel">
+                          <span class="">
+              <h3>Office Details</h3>
+            </span>
+                          <hr>
+                          <div class="row">
+                              <div class="col-md-10">
+
+                                  <!-- Material input -->
+                                  <div class="md-form">
+                                      <input type="text" name="officeAddress" class="form-control" [(ngModel)]="officeAddress" required readonly>
+                                      <label for="address">Office Address</label>
+                                  </div>
+                              </div>
+                              <!--  <div class="col-md-2">
+              <label class="container-fluid c1 usercheck">Car Pickup
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+
+            </div> -->
+                          </div>
+
+                          <div class="row">
+                              <div class="col-md-3">
+                                  <div class="md-form  form-group ">
+                                      <input type="text" name="officeArea" class="form-control" [(ngModel)]="officeArea" required readonly>
+                                      <label for="area">Area</label>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="md-form  form-group ">
+                                      <input type="text" name="officeLandMark" class="form-control" [(ngModel)]="officeLandMark" required readonly>
+                                      <label for="landmark">Landmark</label>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="md-form  form-group ">
+                                      <input type="text" name="officeCity" class="form-control" [(ngModel)]="officeCity" required readonly>
+                                      <label for="city">City</label>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="md-form  form-group ">
+                                      <input type="text" name="officePin" class="form-control" [(ngModel)]="officePin" required pattern="[0-9]{6}" readonly>
+                                      <label for="pin-code">Pin Code</label>
+                                  </div>
+                              </div>
+                          </div>
+                          <!--               <div class="row">
+            <div class="col-md-3">
+              <div class="md-form  form-group ">
+                <input type="text" name="officeNum" class="form-control"  [(ngModel)] ="officeNum" required>
+                <label for="tel-no">Contact Number</label>
+              </div>
+            </div>
+          </div> -->
+
+                          <div class="row">
+                              <div class="col-md">
+                                  <hr>
+                                  <button type="button" class="btn operator float-left" onclick="prev(2)">Prev</button>
+                                  <button type="button" class="btn operator float-right" onclick="next(2)">Next</button>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-----------Residential details-------->
+                      <div class="tab-pane fade" id="3" role="tabpanel">
+                          <span>
+              <h3>Residential Details</h3>
+            </span>
+                          <hr>
+                          <div class="row">
+                              <div class="col-md-10">
+
+                                  <!-- Material input -->
+                                  <div class="md-form">
+                                      <input type="text" name="residentAddress" class="form-control" [(ngModel)]="residentAddress" required>
+                                      <label for="address">Residence Address</label>
+                                  </div>
+                              </div>
+                              <!-- <div class="col-md-2">
+              <label class="container-fluid c1 usercheck">Car Pickup
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div> -->
+                          </div>
+
+                          <div class="row">
+                              <div class="col-md-3">
+                                  <div class="md-form  form-group ">
+                                      <input type="text" name="residentArea" class="form-control" [(ngModel)]="residentArea" required>
+                                      <label for="area">Area</label>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="md-form  form-group ">
+                                      <input type="text" name="residantLandMark" class="form-control" [(ngModel)]="residentLandMark" required>
+                                      <label for="landmark">Landmark</label>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="md-form  form-group ">
+                                      <input type="text" name="residentCity" class="form-control" [(ngModel)]="residentCity" required>
+                                      <label for="city">City</label>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="md-form  form-group ">
+                                      <input type="text" name="residentPin" class="form-control" [(ngModel)]="residentPin" required pattern="[0-9]{6}">
+                                      <label for="pin-code">Pin Code</label>
+                                  </div>
+                              </div>
+                          </div>
+                          <!--         <div class="row">
+            <div class="col-md-3">
+              <div class="md-form  form-group ">
+                <input type="text" name="residentContact" class="form-control"  [(ngModel)] ="residentContact" required>
+                <label for="tel-no">Contact Number</label>
+              </div>
+            </div>
+          </div> -->
+
+                          <div class="row">
+                              <div class="col-md">
+                                  <hr>
+                                  <button type="button" class="btn operator float-left" onclick="prev(3)">Prev</button>
+                                  <button class="btn operator float-right" (click)="createOperator()" [disabled]="!f.valid">Submit</button>
+                              </div>
+                          </div>
+                      </div>
+
+
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
